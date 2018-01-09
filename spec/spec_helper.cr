@@ -1,8 +1,8 @@
 require "spec"
-require "../src/scry/**"
+#require "../src/scry/**"
 
 module Scry
-  EnvironmentConfig.new.run
+  #EnvironmentConfig.new.run
 
   SOME_FILE_PATH = File.expand_path("./fixtures/some_file.cr", __DIR__)
 

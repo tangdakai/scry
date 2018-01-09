@@ -3,6 +3,8 @@ require "../spec_helper"
 require "http"
 require "base64"
 
+class Context;end
+
 module Scry
   describe Context do
     it "test scry executable" do
