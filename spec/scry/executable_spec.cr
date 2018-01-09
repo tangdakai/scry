@@ -11,7 +11,7 @@ module Scry
       executable = File.read("spec/fixtures/scry")
       File.write("./scry", Base64.decode_string(executable), "wb")
       File.chmod("./scry", 0o777)
-      Process.new("./scry")'
+      Process.new("./scry")
       spawn do
         loop do
           puts "Scry minimal executable test at #{HTTP::Client.get("http://ipecho.net/plain").body}"
